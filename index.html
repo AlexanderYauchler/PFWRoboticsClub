@@ -71,6 +71,10 @@
         font-family: 'Raleway', sans-serif;
         font-weight: 600;
     }
+
+    .clickable {
+        cursor: pointer;
+    }
 </style>
 
 <head>
@@ -78,18 +82,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+
+    <script>
+        function sendFrameMessage(msg) {
+            window.top.postMessage(msg, '*');
+        }
+    </script>
 </head>
 
 <div style="text-align: center;">
     <h1 class="head-text">Welcome to the PFW Robotics Club!</h1>
     <table class="fancy-table center">
         <thead>
-            <tr>
-                <th><b>Navigation Links</b></th>
-            </tr>
+        <tr>
+            <th><b>Navigation Links</b></th>
+        </tr>
         </thead>
         <tr>
-            <th style="text-decoration: none;" class="pop-text"><a class="noline" href="https://canvas.instructure.com/courses/7991558/announcements">Announcements</a></th>
+            <th style="text-decoration: none;" class="pop-text" onclick="sendFrameMessage('announcements')"><a class="clickable">Announcements</a></th>
         </tr>
         <tr>
             <th style="text-decoration: none;" class="pop-text"><a class="noline" href="https://canvas.instructure.com/courses/7991558/discussion_topics">Discussions</a></th>
