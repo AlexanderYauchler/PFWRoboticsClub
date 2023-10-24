@@ -84,8 +84,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
 
     <script>
-        function sendFrameMessage(msg) {
-            window.top.postMessage(msg, '*');
+        function sendFrameMessage(data) {
+            const event = new CustomEvent('myCustomEvent', { detail: data })
+            window.parent.document.dispatchEvent(event)
         }
     </script>
 </head>
