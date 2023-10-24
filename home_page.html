@@ -1,0 +1,110 @@
+<style>
+    .noline {
+        text-decoration: none;
+    }
+
+    .fancy-table {
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        font-family: sans-serif;
+        min-width: 400px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .fancy-table thead tr {
+        font-family: 'Raleway', sans-serif;
+        background-color: #009879;
+        color: #ffffff;
+        font-size: large;
+        letter-spacing: 3px;
+    }
+
+    .fancy-table th,
+    .fancy-table td {
+        padding: 12px 15px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+    }
+
+    .center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .fancy-table tbody tr {
+        border-bottom: 1px solid #dddddd;
+    }
+
+    .fancy-table tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+    }
+
+    .fancy-table tbody tr:last-of-type {
+        border-bottom: 2px solid #009879;
+    }
+
+    .fancy-table tbody tr.active-row {
+        font-weight: bold;
+        color: #009879;
+    }
+
+    .pop-text {
+        transition: 0.5s;
+    }
+
+    .pop-text:hover {
+        transform: scale(1.1, 1.1);
+        transition: 0.5s;
+        letter-spacing: 2px;
+    }
+
+    .pop-text:hover:before {
+        content: "> ";
+    }
+
+    .pop-text:hover:after  {
+        content: " <";
+    }
+
+    .head-text {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+    }
+</style>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<div style="text-align: center;">
+    <h1 class="head-text">Welcome to the PFW Robotics Club!</h1>
+    <table class="fancy-table center">
+        <thead>
+            <tr>
+                <th><b>Navigation Links</b></th>
+            </tr>
+        </thead>
+        <tr>
+            <th style="text-decoration: none;" class="pop-text"><a class="noline" href="https://canvas.instructure.com/courses/7991558/announcements">Announcements</a></th>
+        </tr>
+        <tr>
+            <th style="text-decoration: none;" class="pop-text"><a class="noline" href="https://canvas.instructure.com/courses/7991558/discussion_topics">Discussions</a></th>
+        </tr>
+        <tr>
+            <th style="text-decoration: none;" class="pop-text"><a class="noline" href="https://canvas.instructure.com/courses/7991558/files">Files</a></th>
+        </tr>
+        <tr>
+            <th style="text-decoration: none;" class="pop-text"><a class="noline" href="https://canvas.instructure.com/courses/7991558/pages">Pages</a></th>
+        </tr>
+        <tr>
+            <th style="text-decoration: none;" class="pop-text"><a class="noline" href="https://canvas.instructure.com/courses/7991558/users">People</a></th>
+        </tr>
+        <tr>
+            <th style="text-decoration: none;" class="pop-text"><a class="noline" href="https://canvas.instructure.com/courses/7991558/collaborations">Collaborations</a></th>
+        </tr>
+    </table>
+</div>
